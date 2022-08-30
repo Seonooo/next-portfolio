@@ -6,13 +6,13 @@ import ProjectItem from "../components/projects/project-image";
 export default function Projects({projects}){
   return (
     <Layout >
-      <div className="flex flex-col items-center justify-center min-h-screen mb-10 px-6">
+      <div className="flex flex-col items-center justify-center min-h-screen mb-10 px-3">
         <Head>
             <title>Next 공부</title>
             <meta name="description" content="Next 공부" />
             <link rel="icon" href="/favicon.ico" />
         </Head>
-        <h1 className="text-3xl text-center font-bold sm:text-6xl">
+        <h1 className="text-4xl font-bold sm:text-6xl">
           총 프로젝트 :
           <span className="pl-4 text-blue-500">{projects.results.length}</span>
         </h1>
