@@ -34,7 +34,7 @@ export default function ProjectItem({data}){
                 src={imageUrl}
                 alt="cover image"
                 width="100%"
-                height="60%"
+                height="50%"
                 layout="responsive"
                 objectFit="cover"
                 quality={100}
@@ -45,7 +45,7 @@ export default function ProjectItem({data}){
                 <a href={githubLink}>깃허브 바로가기</a>
                 <p className="my-1">작업기간 : {start} ~ {end} ({calculatedPeriod(start, end)}일)</p>
                 <div className="flex items-start mt-2">
-                    {tags.map(tag=><h1 className="px-2 py-1 mr-2 bg-sky-200 rounded-md dark:bg-sky-700" key={tag.id}>{tag.name}</h1>)}    
+                    {tags.map(tag=><h1 className="px-2 py-1 mr-2 bg-sky-200 rounded-md dark:bg-sky-700 w-30" key={tag.id}>{tag.name}</h1>)}    
                 </div>
             </div>
         </div>
